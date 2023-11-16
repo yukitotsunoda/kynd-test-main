@@ -4,7 +4,7 @@
 
     <p class="mt-4">
       Use this page to tell us about the choices made, things added, assumptions made, questions, suggestions, etc...
-    </p> 
+    </p>
   </div>
 </template>
 

@@ -1,11 +1,12 @@
 <template>
-  <div id="app" class="flex items-center h-screen flex-col lg:flex-col-reverse">    
+  <div id="app" class="flex items-center h-screen flex-col lg:flex-col-reverse">
     <div class="flex-1 relative w-full overflow-auto">
-      <router-view/>
+      <router-view />
     </div>
 
     <nav class="flex-none w-full text-center">
       <router-link to="/">Home</router-link> |
+      <router-link to="/members">Members</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
   </div>
