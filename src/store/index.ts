@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import Vuex, { ActionContext } from 'vuex'
-import MembersService, { Member } from '@/services/members'
+import Vuex from 'vuex'
 import { StoreState } from './types'
+import { membersModule } from './modules/members'
 
 Vue.use(Vuex)
 
@@ -16,5 +16,6 @@ export default new Vuex.Store<StoreState>({
   actions: {
   },
   modules: {
+  　members: membersModule
   }
 })
