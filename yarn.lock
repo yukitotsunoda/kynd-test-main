@@ -1073,6 +1073,11 @@
   resolved "https://registry.npmjs.org/@soda/get-current-script/-/get-current-script-1.0.2.tgz"
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
+"@tailwindcss/line-clamp@^0.4.4":
+  version "0.4.4"
+  resolved "https://registry.npmjs.org/@tailwindcss/line-clamp/-/line-clamp-0.4.4.tgz"
+  integrity sha512-5U6SY5z8N42VtrCrKlsTAA35gy2VSyYtHWCsg1H87NU1SXnEfekTVlrga9fzUDrrHcGi2Lb5KenUWb4lRQT5/g==
+
 "@trysound/sax@0.2.0":
   version "0.2.0"
   resolved "https://registry.npmjs.org/@trysound/sax/-/sax-0.2.0.tgz"
@@ -5331,7 +5336,7 @@ svgo@^2.7.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-tailwindcss@^3.0.24:
+tailwindcss@^3.0.24, "tailwindcss@>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1":
   version "3.0.24"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.0.24.tgz"
   integrity sha512-H3uMmZNWzG6aqmg9q07ZIRNIawoiEcNFKDfL+YzOPuPsXuDXxJxB9icqzLgdzKNwjG3SAro2h9SYav8ewXNgig==
