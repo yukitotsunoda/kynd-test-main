@@ -1,4 +1,4 @@
-import { Member } from './types'
+import { Member } from './types';
 
 const loadMembers = () => {
   return new Promise<Member[]>((resolve, reject) => {
@@ -44,12 +44,12 @@ const loadMembers = () => {
           lastMessage: `I watch the clock tick tock. Been saving all the green that I got. I can't wait to kick off my work shoes`,
           age: 19
         }
-      ])
-    }, 2000)
-  })
-}
+      ]);
+    }, 200);
+  });
+};
 
-export * from './types'
+export * from './types';
 export default {
   loadMembers
-}
+};
