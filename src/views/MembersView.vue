@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col h-full items-center px-4 text-center mx-auto lg:px-16">
+  <div class="flex flex-col h-full justify-center items-center px-4 text-center mx-auto lg:px-16">
     <div v-if="membersState.members">
       <p class="font-bold mb-2 text-left">
-        <!-- Found {{ membersState.membersState.length }} members with an average age of {{ averageAge }} -->
+        Found {{ membersState.members.length }} members with an average age of {{ averageAge }}
       </p>
       <div class="lg:flex lg:max-w-[1280px] lg:flex-wrap">
         <MemberCard v-for="member in membersState.members" :member="member" :key="member.id" class="mb-2" />
@@ -22,7 +22,7 @@
 <script lang="ts">
 import MemberCard from '@/components/members/MemberCard.vue';
 import { Component, Vue } from 'vue-property-decorator'
-import { Action, State } from 'vuex-class';
+import { Action, Getter, State } from 'vuex-class';
 
 const namespace: string = 'members';
 
@@ -34,6 +34,7 @@ const namespace: string = 'members';
 export default class MembersView extends Vue {
   @State('members') membersState: any;
   @Action('fetchData', { namespace }) fetchData: any;
+  @Getter('averageAge', { namespace }) averageAge: any;
 
   async loadMembers() {
     this.fetchData();
