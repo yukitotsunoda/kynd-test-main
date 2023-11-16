@@ -1,6 +1,6 @@
-import { Member } from "@/services/members";
+import { Member } from '@/services/members';
 
 export interface MembersState {
-    members?: Member[];
-    error: boolean;
+  members?: Member[];
+  error: boolean;
 }
