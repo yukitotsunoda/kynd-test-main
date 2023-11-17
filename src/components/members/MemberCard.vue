@@ -1,14 +1,14 @@
 <template>
-  <div class="w-full shadow-md m-2 px-6 py-4 rounded-2xl lg:w-[30%]">
+  <div class="w-full shadow-md px-6 py-4 rounded-2xl">
     <div class="flex">
-      <div class="w-12 h-12 rounded-full flex justify-center items-center mr-6" :style="initialsColour()">
+      <div class="w-12 h-12 rounded-full flex justify-center items-center mr-6" :style="getBgColorByInitials()">
         {{ initials }}
       </div>
       <div class="flex flex-col justify-center items-start">
         <p class="text-sm">
           {{ fullName }}
         </p>
-        <p class="text-xs">
+        <p class="text-xs text-gray-500">
           Member for {{ joinedFor }}
         </p>
       </div>
@@ -46,7 +46,7 @@ export default class MemberCard extends Vue {
     return `${Math.floor(duration.asDays())} days`;
   }
 
-  public initialsColour() {
+  public getBgColorByInitials(): { backgroundColor: string } {
     return {
       backgroundColor: mapInitialsToHexColour(this.initials)
     }
