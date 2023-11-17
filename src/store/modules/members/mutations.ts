@@ -3,7 +3,7 @@ import { MembersState } from './types';
 import { Member } from '@/services/members';
 
 export const mutations: MutationTree<MembersState> = {
-  update(state, payload: Member[]) {
+  setMembers(state, payload: Member[]) {
     state.error = false;
     state.members = payload;
   },
